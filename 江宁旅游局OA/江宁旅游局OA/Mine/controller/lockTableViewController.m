@@ -7,7 +7,6 @@
 //
 
 #import "lockTableViewController.h"
-#import "AppConstants.h"
 #import "LKBubbleView.h"
 @interface lockTableViewController ()
 @property (nonatomic ,strong)  NSMutableArray *phoneArr;

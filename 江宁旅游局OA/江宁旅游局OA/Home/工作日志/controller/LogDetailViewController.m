@@ -7,7 +7,6 @@
 //
 
 #import "LogDetailViewController.h"
-#import "AppConstants.h"
 @interface LogDetailViewController ()<UITextViewDelegate>
 @property (nonatomic ,strong)  UITextView *detailTextView;
 

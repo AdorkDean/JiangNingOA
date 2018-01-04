@@ -7,7 +7,6 @@
 //
 
 #import "CalenderView.h"
-#import "AppConstants.h"
 
 @interface CalenderCell : UICollectionViewCell
 

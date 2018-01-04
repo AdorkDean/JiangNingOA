@@ -8,7 +8,6 @@
 
 #import "JGHeaderView.h"
 #import "JGFriendGroup.h"
-#import "AppConstants.h"
 @interface JGHeaderView ()
 
 @property (nonatomic, weak) UILabel *countView;

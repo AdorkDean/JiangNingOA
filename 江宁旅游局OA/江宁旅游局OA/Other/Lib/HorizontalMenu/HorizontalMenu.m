@@ -20,7 +20,6 @@
 #import "HorizontalMenu.h"
 #import "UIViewExt.h"
 #import "Utility.h"
-#import "AppConstants.h"
 @interface RemoveBtnHighlighted : UIButton
 
 @end

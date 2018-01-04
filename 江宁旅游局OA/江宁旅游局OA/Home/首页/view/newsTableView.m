@@ -7,7 +7,6 @@
 //
 
 #import "newsTableView.h"
-#import "AppConstants.h"
 @implementation newsTableView
 
 - (instancetype)initWithFrame:(CGRect)frame{

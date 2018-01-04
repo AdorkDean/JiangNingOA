@@ -7,7 +7,6 @@
 //
 
 #import "AnDetailViewController.h"
-#import "AppConstants.h"
 #import "IHKeyboardAvoiding.h"
 #import "zySheetPickerView.h"
 @interface AnDetailViewController ()

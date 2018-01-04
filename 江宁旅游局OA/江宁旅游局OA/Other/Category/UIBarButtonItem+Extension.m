@@ -7,7 +7,6 @@
 //
 
 #import "UIBarButtonItem+Extension.h"
-#import "AppConstants.h"
 @implementation UIBarButtonItem (Extension)
 /**
  *  创建一个item

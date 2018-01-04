@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class JGFriend;
 
 @interface JGFriendCell : UITableViewCell
@@ -16,9 +15,12 @@
     UILabel *titleLabel;
     UILabel *detailLabel;
     UIImageView *iconImageView;
-    UIButton *phoneBtn;
-    UIButton *messageBtn;
+//    UIButton *phoneBtn;
+//    UIButton *messageBtn;
 }
+
+@property (nonatomic ,strong)  UIButton *phoneBtn;
+@property (nonatomic ,strong)  UIButton *messageBtn;
 /*
 - (void)setIconImageViewImage:(UIImage *)iconImage phoneImageViewImage:(UIImage *)phoneImage messageImageViewImage:(UIImage *)messageImage titleLabelText:(NSString *)titleLabelText detailLabelText:(NSString *)detailLabelText;
 */

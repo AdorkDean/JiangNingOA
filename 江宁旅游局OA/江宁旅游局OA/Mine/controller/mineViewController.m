@@ -7,7 +7,6 @@
 //
 
 #import "mineViewController.h"
-#import "AppConstants.h"
 #import "loginViewController.h"
 #import "mineDetailTableViewController.h"
 #import "nameBookTableViewController.h"

@@ -10,7 +10,6 @@
 #import "loginViewController.h"
 #import "homeViewController.h"
 #import "TabbarViewController.h"
-#import "AppConstants.h"
 #import "NavigationController.h"
 @interface AppDelegate ()
 

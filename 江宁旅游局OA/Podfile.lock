@@ -19,20 +19,22 @@ PODS:
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - SAMKeychain (1.5.2)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SFHFKeychainUtils (0.0.1)
+  - UICKeyChainStore (2.1.0)
 
 DEPENDENCIES:
-  - AFNetworking
-  - Masonry
-  - MBProgressHUD
-  - MJExtension
-  - MJRefresh
-  - SAMKeychain
-  - SDWebImage
-  - SFHFKeychainUtils
+  - AFNetworking (~> 3.1.0)
+  - Masonry (= 1.0.2)
+  - MBProgressHUD (= 1.0.0)
+  - MJExtension (= 3.0.13)
+  - MJRefresh (= 3.1.12)
+  - SAMKeychain (= 1.5.2)
+  - SDWebImage (= 4.0.0)
+  - SFHFKeychainUtils (= 0.0.1)
+  - UICKeyChainStore (= 2.1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -41,7 +43,10 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 485e0ba33ae443131c4a4c6b7c33ced7a839aa2d
+
+COCOAPODS: 1.2.0

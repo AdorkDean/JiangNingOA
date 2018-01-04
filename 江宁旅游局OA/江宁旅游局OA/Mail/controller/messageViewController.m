@@ -7,7 +7,6 @@
 //
 
 #import "messageViewController.h"
-#import "AppConstants.h"
 @interface messageViewController ()
 /// 上一个cell的下标
 @property (nonatomic, assign) long lastCellIndex;
@@ -23,6 +22,8 @@
     self.navigationItem.title = @"消 息";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    //去掉tableView的横线
+    self.tableView.separatorStyle = NO;
     
 }
 

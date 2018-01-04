@@ -7,7 +7,6 @@
 //
 
 #import "mineDetailTableViewController.h"
-#import "AppConstants.h"
 @interface mineDetailTableViewController ()
 @property (nonatomic ,strong)  NSArray *detailArr;
 @end

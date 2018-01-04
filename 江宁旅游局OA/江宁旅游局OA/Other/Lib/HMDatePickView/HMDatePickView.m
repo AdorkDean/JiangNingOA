@@ -7,7 +7,6 @@
 //
 
 #import "HMDatePickView.h"
-#import "AppConstants.h"
 @interface HMDatePickView()
 {
     NSString *_dateStr;

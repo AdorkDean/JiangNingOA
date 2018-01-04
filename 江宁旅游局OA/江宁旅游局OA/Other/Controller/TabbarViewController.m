@@ -13,7 +13,6 @@
 #import "messageViewController.h"
 #import "mineViewController.h"
 #import "NavigationController.h"
-#import "AppConstants.h"
 @interface TabbarViewController ()
 
 @end

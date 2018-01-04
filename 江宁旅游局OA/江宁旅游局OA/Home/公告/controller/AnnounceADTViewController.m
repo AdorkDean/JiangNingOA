@@ -51,12 +51,12 @@
     }
     NSString *titleText = @"公告标题";
     NSString *detailText = [NSString stringWithFormat:@"发布人:%@",@"农好强"];
-    [cell setImageViewImage:[UIImage imageNamed:@"processAnnounce"] titleLabelText:titleText detailLabelText:detailText buttonText:@"审  核" target:self buttonAction:@selector(btnClick)];
+    [cell setImageViewImage:[UIImage imageNamed:@"processAnnounce"] titleLabelText:titleText detailLabelText:detailText buttonText:@"审  核" target:self buttonAction:@selector(btnClick:)];
     
     return cell;
 }
 
-- (void)btnClick{
+- (void)btnClick:(UIButton *)sender{
          
 }
 

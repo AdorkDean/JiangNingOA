@@ -7,7 +7,6 @@
 //
 
 #import "AuditAssetsViewController.h"
-#import "AppConstants.h"
 #import "sectionView.h"
 #import "IHKeyboardAvoiding.h"
 @interface AuditAssetsViewController ()<UITextViewDelegate>

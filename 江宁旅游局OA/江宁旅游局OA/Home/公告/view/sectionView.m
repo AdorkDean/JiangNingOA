@@ -7,7 +7,6 @@
 //
 
 #import "sectionView.h"
-#import "AppConstants.h"
 @implementation sectionView
 
 - (instancetype)initWithFrame:(CGRect)frame{

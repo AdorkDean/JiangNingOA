@@ -7,7 +7,6 @@
 //
 
 #import "announcementView.h"
-#import "AppConstants.h"
 @implementation announcementView
 
 - (instancetype)initWithFrame:(CGRect)frame{

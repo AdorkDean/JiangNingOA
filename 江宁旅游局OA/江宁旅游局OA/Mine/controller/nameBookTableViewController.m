@@ -11,7 +11,6 @@
 #import "JGFriendGroup.h"
 #import "JGFriendCell.h"
 #import "JGHeaderView.h"
-#import "AppConstants.h"
 @interface nameBookTableViewController ()<JGHeaderViewDelegate>
 @property (nonatomic, strong) NSArray *groups;
 @end
@@ -73,8 +72,24 @@
     //2. 设置cell的数据
     JGFriendGroup *group = self.groups[indexPath.section];
     cell.friendData = group.friends[indexPath.row];
-    
+    [cell.phoneBtn addTarget:self action:@selector(phoneBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    cell.phoneBtn.tag = indexPath.row;
+    [cell.messageBtn addTarget:self action:@selector(messageBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    cell.messageBtn.tag = indexPath.row;
+//    cell.messageBtn
     return cell;
+}
+
+- (void)phoneBtnClick:(UIButton *)sender{
+    
+  OS_UNUSED  JGFriendGroup *group = self.groups[sender.tag];
+    NSString *callString = [NSString stringWithFormat:@"tel:10086"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+    mAlertView(@"我是打电话的",callString);
+}
+
+- (void)messageBtnClick:(UIButton *)sender{
+    mAlertView(@"我是发信息的",@"给");
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

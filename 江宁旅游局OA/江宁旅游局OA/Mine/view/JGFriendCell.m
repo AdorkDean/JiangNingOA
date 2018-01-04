@@ -7,7 +7,6 @@
 
 #import "JGFriendCell.h"
 #import "JGFriend.h"
-#import "AppConstants.h"
 @implementation JGFriendCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -18,13 +17,13 @@
         titleLabel.font = [UIFont systemFontOfSize:15];
         detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(titleLabel.x, GG_BOTTOM_Y(titleLabel) + 15, 80, 15)];
         detailLabel.font = [UIFont systemFontOfSize:15];
-        phoneBtn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 90, 25, 20, 20)];
-        messageBtn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 45, 25, 20, 20)];
+        _phoneBtn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 90, 25, 20, 20)];
+        _messageBtn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 45, 25, 20, 20)];
         [self.contentView addSubview:iconImageView];
         [self.contentView addSubview:titleLabel];
         [self.contentView addSubview:detailLabel];
-        [self.contentView addSubview:phoneBtn];
-        [self.contentView addSubview:messageBtn];
+        [self.contentView addSubview:_phoneBtn];
+        [self.contentView addSubview:_messageBtn];
     }
     
     
@@ -42,13 +41,13 @@
     messageImageView.image = [UIImage imageNamed:@"message"];
 }
 */
-+ (instancetype)cellWithTableView:(UITableView *)tableView {
++ (instancetype)cellWithTableView:(UITableView *)tableView
+{
     
     static NSString *ID = @"friend";
     JGFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[JGFriendCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-        
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -56,7 +55,7 @@
 
 
 
-- (void)setFriendData:(JGFriend *)friendData {
+- (void)setFriendData:(JGFriend *)friendData{
     
     _friendData = friendData;
     
@@ -64,18 +63,16 @@
     self.textLabel.text = friendData.name;
     self.textLabel.textColor = [UIColor blackColor];
     self.detailTextLabel.text = friendData.phone;
+    [_phoneBtn setImage:[UIImage imageNamed:@"phone"] forState:UIControlStateNormal];
+    [_messageBtn setImage:[UIImage imageNamed:@"message"] forState:UIControlStateNormal];
     
-   // phoneBtn.tag = indexPath.row;
-    [phoneBtn setImage:[UIImage imageNamed:@"phone"] forState:UIControlStateNormal];
-    
-    [phoneBtn addTarget:self action:@selector(phoneClick:) forControlEvents:UIControlEventTouchUpInside];
-    [messageBtn setImage:[UIImage imageNamed:@"message"] forState:UIControlStateNormal];
-    [messageBtn addTarget:self action:@selector(messageClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+
 - (void)phoneClick:(UIButton *)sender{
-    
     mAlertView(@"我是打电话的",@"打电话");
+    NSString *callString = [NSString stringWithFormat:@"tel:10086"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
 }
 
 - (void)messageClick:(UIButton *)sender{

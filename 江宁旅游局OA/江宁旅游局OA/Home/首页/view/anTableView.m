@@ -7,7 +7,6 @@
 //
 
 #import "anTableView.h"
-#import "AppConstants.h"
 @implementation anTableView
 
 - (instancetype)initWithFrame:(CGRect)frame{

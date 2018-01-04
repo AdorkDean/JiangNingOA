@@ -7,24 +7,35 @@
 //
 
 #import "publicCell.h"
-#import "AppConstants.h"
 @implementation publicCell
+
+
+- (void)setFrame:(CGRect)frame{
+    frame.origin.x += 5;
+    frame.size.width -=10;
+    frame.size.height -= 5;
+    [super setFrame:frame];
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        UIImageView *bgView = [UIImageView new];
+        bgView.image = [UIImage imageNamed:@"mainCellBackground"];
+        self.backgroundView = bgView;
+        
+        
         imageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 15, 30, 30)];
         titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(GG_RIGHT_X(imageView) + 10, 10, 300, 15)];
         titleLabel.font = [UIFont systemFontOfSize:15];
         detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(titleLabel.x, GG_BOTTOM_Y(titleLabel) + 13, 200, 13)];
         detailLabel.font = [UIFont systemFontOfSize:13];
         
-        _btn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 75, 27, 60, 20)];
+        _btn = [[UIButton alloc] initWithFrame:ccr(SCREEN_WIDTH - 85, 27, 60, 20)];
         _btn.backgroundColor = XHColor(239, 91, 112);
         _btn.tintColor = [UIColor whiteColor];
         _btn.titleLabel.font = [UIFont systemFontOfSize:10];
         _btn.layer.cornerRadius = 5.0;
-//        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:imageView];
         [self.contentView addSubview:titleLabel];
         [self.contentView addSubview:detailLabel];

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppConstants.h"
 @interface dataButton : UIButton
 
 @end

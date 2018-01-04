@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40FAFBE8E11934C9F9DB5019 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B8C57156AC1C3FC72D9E31 /* libPods.a */; };
 		A505BFDE1DD06A9D00B90E02 /* remindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505BFDD1DD06A9D00B90E02 /* remindTableViewController.m */; };
 		A505BFE71DD1719D00B90E02 /* lockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505BFE61DD1719D00B90E02 /* lockTableViewController.m */; };
 		A509FED41DAF924600C40306 /* mineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A509FED31DAF924600C40306 /* mineViewController.m */; };
@@ -89,6 +88,8 @@
 		A58DBD401DCB2BC900FC151A /* JGHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A58DBD3E1DCB2BC900FC151A /* JGHeaderView.m */; };
 		A58DBD431DCB2BE300FC151A /* nameBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A58DBD421DCB2BE300FC151A /* nameBookTableViewController.m */; };
 		A58DBD461DCB80BE00FC151A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A58DBD451DCB80BE00FC151A /* UIBarButtonItem+Extension.m */; };
+		A5B7D0561F14C68B00CF61A6 /* MiddleWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B7D0551F14C68B00CF61A6 /* MiddleWebView.m */; };
+		A5B7D05D1F15FB9C00CF61A6 /* DetailWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B7D05C1F15FB9C00CF61A6 /* DetailWebView.m */; };
 		A5C6B0721E0BB0EA00EF103A /* LogEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6B0711E0BB0E900EF103A /* LogEditorViewController.m */; };
 		A5C9C6CE1DDDA3EF009E50E9 /* JWHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C9C6CD1DDDA3EF009E50E9 /* JWHttpTool.m */; };
 		A5E5B05E1DED4F9C007A34D4 /* AnnounceADTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E5B05D1DED4F9C007A34D4 /* AnnounceADTViewController.m */; };
@@ -120,6 +121,7 @@
 		A5FEB52B1E138B2C00A28E35 /* AuditReturnAssetsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FEB52A1E138B2C00A28E35 /* AuditReturnAssetsListViewController.m */; };
 		A5FEB5371E165A7C00A28E35 /* dataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FEB5341E165A7C00A28E35 /* dataTableViewController.m */; };
 		A5FEB53A1E165CF000A28E35 /* dataButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FEB5391E165CF000A28E35 /* dataButton.m */; };
+		E669A859A41C1CC8E21658D0 /* libPods-江宁旅游局OA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB553A4741036D200F0E32B0 /* libPods-江宁旅游局OA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,9 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39B8C57156AC1C3FC72D9E31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BBD90CCA5A78A2C45D70162 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		97863828E5CD4C8A245F6B50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B06CDA5DA64084728071B0 /* Pods-江宁旅游局OA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-江宁旅游局OA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-江宁旅游局OA/Pods-江宁旅游局OA.debug.xcconfig"; sourceTree = "<group>"; };
 		A505BFDC1DD06A9D00B90E02 /* remindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remindTableViewController.h; sourceTree = "<group>"; };
 		A505BFDD1DD06A9D00B90E02 /* remindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remindTableViewController.m; sourceTree = "<group>"; };
 		A505BFE51DD1719D00B90E02 /* lockTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lockTableViewController.h; sourceTree = "<group>"; };
@@ -155,7 +155,6 @@
 		A50B6DE81DB7B15100BD966C /* messageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageViewController.m; sourceTree = "<group>"; };
 		A50B6DEB1DB7B56500BD966C /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		A50B6DEC1DB7B56500BD966C /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
-		A50B6DEF1DB7B60200BD966C /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		A50B6DF01DB7B60200BD966C /* ItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTool.h; sourceTree = "<group>"; };
 		A50B6DF11DB7B60200BD966C /* ItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTool.m; sourceTree = "<group>"; };
 		A50F898D1DF8192A00C491C7 /* XjwDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XjwDatePickerView.h; sourceTree = "<group>"; };
@@ -259,8 +258,8 @@
 		A52F94911E1B97AD006D01B1 /* ZLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLWebViewController.m; sourceTree = "<group>"; };
 		A52F94931E1C9CE5006D01B1 /* dataDropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataDropDownView.h; sourceTree = "<group>"; };
 		A52F94941E1C9CE5006D01B1 /* dataDropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataDropDownView.m; sourceTree = "<group>"; };
-		A52F94991E1CC1E7006D01B1 /* DropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropViewController.h; sourceTree = "<group>"; };
-		A52F949A1E1CC1E7006D01B1 /* DropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropViewController.m; sourceTree = "<group>"; };
+		A52F94991E1CC1E7006D01B1 /* DropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropViewController.h; path = ../view/DropViewController.h; sourceTree = "<group>"; };
+		A52F949A1E1CC1E7006D01B1 /* DropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DropViewController.m; path = ../view/DropViewController.m; sourceTree = "<group>"; };
 		A53C502D1E00E92E00A6645C /* LogListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogListViewController.h; sourceTree = "<group>"; };
 		A53C502E1E00E92E00A6645C /* LogListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogListViewController.m; sourceTree = "<group>"; };
 		A53C50301E012E1600A6645C /* LogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogCell.h; sourceTree = "<group>"; };
@@ -300,6 +299,11 @@
 		A58DBD421DCB2BE300FC151A /* nameBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nameBookTableViewController.m; sourceTree = "<group>"; };
 		A58DBD441DCB80BE00FC151A /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		A58DBD451DCB80BE00FC151A /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		A5B7D0541F14C68B00CF61A6 /* MiddleWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleWebView.h; sourceTree = "<group>"; };
+		A5B7D0551F14C68B00CF61A6 /* MiddleWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleWebView.m; sourceTree = "<group>"; };
+		A5B7D05B1F15FB9C00CF61A6 /* DetailWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWebView.h; sourceTree = "<group>"; };
+		A5B7D05C1F15FB9C00CF61A6 /* DetailWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWebView.m; sourceTree = "<group>"; };
+		A5B7D0601F17190000CF61A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A5C6B0701E0BB0E900EF103A /* LogEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEditorViewController.h; sourceTree = "<group>"; };
 		A5C6B0711E0BB0E900EF103A /* LogEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEditorViewController.m; sourceTree = "<group>"; };
 		A5C9C6CC1DDDA3EF009E50E9 /* JWHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWHttpTool.h; sourceTree = "<group>"; };
@@ -325,10 +329,10 @@
 		A5E78B9E1DAA4E6B00F5158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5E78BA11DAA4E6B00F5158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5E78BA81DAA4E6B00F5158B /* 江宁旅游局OATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "江宁旅游局OATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5E78BAC1DAA4E6B00F5158B /* _____OATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____OATests.m"; sourceTree = "<group>"; };
+		A5E78BAC1DAA4E6B00F5158B /* _____OATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____OATests.m; sourceTree = "<group>"; };
 		A5E78BAE1DAA4E6B00F5158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E78BB31DAA4E6B00F5158B /* 江宁旅游局OAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "江宁旅游局OAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5E78BB71DAA4E6B00F5158B /* _____OAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____OAUITests.m"; sourceTree = "<group>"; };
+		A5E78BB71DAA4E6B00F5158B /* _____OAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _____OAUITests.m; sourceTree = "<group>"; };
 		A5E78BB91DAA4E6B00F5158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E78BC61DAB253400F5158B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A5E78BC81DAB254A00F5158B /* 江宁旅游局OA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "江宁旅游局OA.entitlements"; path = "江宁旅游局OA/江宁旅游局OA.entitlements"; sourceTree = "<group>"; };
@@ -360,6 +364,8 @@
 		A5FEB5341E165A7C00A28E35 /* dataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataTableViewController.m; sourceTree = "<group>"; };
 		A5FEB5381E165CF000A28E35 /* dataButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataButton.h; sourceTree = "<group>"; };
 		A5FEB5391E165CF000A28E35 /* dataButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataButton.m; sourceTree = "<group>"; };
+		CB553A4741036D200F0E32B0 /* libPods-江宁旅游局OA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-江宁旅游局OA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D570C574BD276D0395D26D /* Pods-江宁旅游局OA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-江宁旅游局OA.release.xcconfig"; path = "Pods/Target Support Files/Pods-江宁旅游局OA/Pods-江宁旅游局OA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,7 +376,7 @@
 				A5E78BCD1DAB27EB00F5158B /* libz.1.2.8.tbd in Frameworks */,
 				A5E78BCA1DAB26A100F5158B /* Reveal.framework in Frameworks */,
 				A5E78BC71DAB253400F5158B /* Security.framework in Frameworks */,
-				40FAFBE8E11934C9F9DB5019 /* libPods.a in Frameworks */,
+				E669A859A41C1CC8E21658D0 /* libPods-江宁旅游局OA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,11 +397,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D40D97EDD9F482CFF62FC67 /* Pods */ = {
+		427FC29BAD29FB94DCE022B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97863828E5CD4C8A245F6B50 /* Pods.debug.xcconfig */,
-				4BBD90CCA5A78A2C45D70162 /* Pods.release.xcconfig */,
+				A0B06CDA5DA64084728071B0 /* Pods-江宁旅游局OA.debug.xcconfig */,
+				F1D570C574BD276D0395D26D /* Pods-江宁旅游局OA.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -480,7 +486,6 @@
 		A50B6DEE1DB7B5D000BD966C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				A50B6DEF1DB7B60200BD966C /* AppConstants.h */,
 				A50B6DF01DB7B60200BD966C /* ItemTool.h */,
 				A50B6DF11DB7B60200BD966C /* ItemTool.m */,
 				A5C9C6CC1DDDA3EF009E50E9 /* JWHttpTool.h */,
@@ -544,6 +549,7 @@
 				A50B6DEE1DB7B5D000BD966C /* Tool */,
 				A51DF4CD1DAB5FD500E44D16 /* Category */,
 				A51DF4DA1DAB5FD500E44D16 /* Lib */,
+				A5B7D0601F17190000CF61A6 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1031,6 +1037,7 @@
 			isa = PBXGroup;
 			children = (
 				A5FEB5311E16592B00A28E35 /* 首页 */,
+				A5B7D05A1F15FB5C00CF61A6 /* view */,
 				A5FEB5301E16591800A28E35 /* 游客属性分析 */,
 				A5FEB52C1E16591800A28E35 /* 客流分析 */,
 				A5FEB52D1E16591800A28E35 /* 客源分析 */,
@@ -1058,6 +1065,15 @@
 			path = JMAnimationButton;
 			sourceTree = "<group>";
 		};
+		A5B7D05A1F15FB5C00CF61A6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7D05B1F15FB9C00CF61A6 /* DetailWebView.h */,
+				A5B7D05C1F15FB9C00CF61A6 /* DetailWebView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		A5E5B0631DEED9F3007A34D4 /* PKUPView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1076,8 +1092,8 @@
 				A5E78BAB1DAA4E6B00F5158B /* 江宁旅游局OATests */,
 				A5E78BB61DAA4E6B00F5158B /* 江宁旅游局OAUITests */,
 				A5E78B901DAA4E6B00F5158B /* Products */,
-				6D40D97EDD9F482CFF62FC67 /* Pods */,
 				BE163233CC4AE353A454233E /* Frameworks */,
+				427FC29BAD29FB94DCE022B5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1239,6 +1255,8 @@
 			children = (
 				A5FEB5331E165A7C00A28E35 /* dataTableViewController.h */,
 				A5FEB5341E165A7C00A28E35 /* dataTableViewController.m */,
+				A52F94991E1CC1E7006D01B1 /* DropViewController.h */,
+				A52F949A1E1CC1E7006D01B1 /* DropViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1257,8 +1275,8 @@
 				A5FEB5391E165CF000A28E35 /* dataButton.m */,
 				A52F94931E1C9CE5006D01B1 /* dataDropDownView.h */,
 				A52F94941E1C9CE5006D01B1 /* dataDropDownView.m */,
-				A52F94991E1CC1E7006D01B1 /* DropViewController.h */,
-				A52F949A1E1CC1E7006D01B1 /* DropViewController.m */,
+				A5B7D0541F14C68B00CF61A6 /* MiddleWebView.h */,
+				A5B7D0551F14C68B00CF61A6 /* MiddleWebView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1268,7 +1286,7 @@
 			children = (
 				A5E78BCC1DAB27EB00F5158B /* libz.1.2.8.tbd */,
 				A5E78BC61DAB253400F5158B /* Security.framework */,
-				39B8C57156AC1C3FC72D9E31 /* libPods.a */,
+				CB553A4741036D200F0E32B0 /* libPods-江宁旅游局OA.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1280,12 +1298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E78BBC1DAA4E6B00F5158B /* Build configuration list for PBXNativeTarget "江宁旅游局OA" */;
 			buildPhases = (
-				43FF3CA2D5959BD9B0F608B7 /* Check Pods Manifest.lock */,
+				C63EE688392840BD46EB84C2 /* [CP] Check Pods Manifest.lock */,
 				A5E78B8B1DAA4E6B00F5158B /* Sources */,
 				A5E78B8C1DAA4E6B00F5158B /* Frameworks */,
 				A5E78B8D1DAA4E6B00F5158B /* Resources */,
-				3D0BF695F063D267937C3BD1 /* Embed Pods Frameworks */,
-				882BF805F0597605D1AE7048 /* Copy Pods Resources */,
+				6893257B4AF0058D73206E3D /* [CP] Embed Pods Frameworks */,
+				9FCDBF19D715DFA7030222F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1343,7 +1361,7 @@
 				TargetAttributes = {
 					A5E78B8E1DAA4E6B00F5158B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 75NKQDP323;
+						DevelopmentTeam = DJA6SD99ZP;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1421,49 +1439,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D0BF695F063D267937C3BD1 /* Embed Pods Frameworks */ = {
+		6893257B4AF0058D73206E3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-江宁旅游局OA/Pods-江宁旅游局OA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43FF3CA2D5959BD9B0F608B7 /* Check Pods Manifest.lock */ = {
+		9FCDBF19D715DFA7030222F9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-江宁旅游局OA/Pods-江宁旅游局OA-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		882BF805F0597605D1AE7048 /* Copy Pods Resources */ = {
+		C63EE688392840BD46EB84C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1510,6 +1528,7 @@
 				A52F94951E1C9CE5006D01B1 /* dataDropDownView.m in Sources */,
 				A51DF52B1DAB5FD600E44D16 /* PinyinHelper.m in Sources */,
 				A51DF5281DAB5FD600E44D16 /* NSString+PinYin4Cocoa.m in Sources */,
+				A5B7D0561F14C68B00CF61A6 /* MiddleWebView.m in Sources */,
 				A50B6DE61DB7567D00BD966C /* customCell.m in Sources */,
 				A5E5B0611DED5235007A34D4 /* AnDetailViewController.m in Sources */,
 				A58DBD3F1DCB2BC900FC151A /* JGFriendCell.m in Sources */,
@@ -1523,6 +1542,7 @@
 				A51FAA021DD45CB100758313 /* announceTableViewController.m in Sources */,
 				A58DBD391DCB2BB700FC151A /* JGFriend.m in Sources */,
 				A5F577AB1DB4D8700038EB27 /* progressViewController.m in Sources */,
+				A5B7D05D1F15FB9C00CF61A6 /* DetailWebView.m in Sources */,
 				A51DF5141DAB5FD600E44D16 /* UITabBar+badge.m in Sources */,
 				A51DF5251DAB5FD600E44D16 /* ChineseInclude.m in Sources */,
 				A51FAA271DD45D8A00758313 /* CalenderView.m in Sources */,
@@ -1718,15 +1738,18 @@
 		};
 		A5E78BBD1DAA4E6B00F5158B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97863828E5CD4C8A245F6B50 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A0B06CDA5DA64084728071B0 /* Pods-江宁旅游局OA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "江宁旅游局OA/江宁旅游局OA.entitlements";
-				DEVELOPMENT_TEAM = 75NKQDP323;
+				DEVELOPMENT_TEAM = DJA6SD99ZP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xinhuapro/Git仓库/JiangNingOA/江宁旅游局OA/江宁旅游局OA/Other/PrefixHeader.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "江宁旅游局OA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1738,15 +1761,18 @@
 		};
 		A5E78BBE1DAA4E6B00F5158B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BBD90CCA5A78A2C45D70162 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F1D570C574BD276D0395D26D /* Pods-江宁旅游局OA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "江宁旅游局OA/江宁旅游局OA.entitlements";
-				DEVELOPMENT_TEAM = 75NKQDP323;
+				DEVELOPMENT_TEAM = DJA6SD99ZP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/xinhuapro/Git仓库/JiangNingOA/江宁旅游局OA/江宁旅游局OA/Other/PrefixHeader.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "江宁旅游局OA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

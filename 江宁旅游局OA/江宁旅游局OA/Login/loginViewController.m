@@ -7,7 +7,6 @@
 //
 
 #import "loginViewController.h"
-#import "AppConstants.h"
 #import "TabbarViewController.h"
 #import "JMAnimationButton.h"
 #import "LKBubbleView.h"

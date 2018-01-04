@@ -7,17 +7,16 @@
 //
 
 #import "dataTableViewController.h"
-#import "AppConstants.h"
 #import "dataButton.h"
-
 #import "KLWebViewController.h"
 #import "KSWebViewController.h"
 #import "KYWebViewController.h"
 #import "JWWebViewController.h"
 #import "ZLWebViewController.h"
+#import "MiddleWebView.h"
 @interface dataTableViewController ()<UIWebViewDelegate>
 @property (nonatomic ,strong)  UIView *headerView;
-@property (nonatomic ,strong)  UIWebView *webView;
+@property (nonatomic ,strong)  MiddleWebView *webView;
 @property (nonatomic ,strong)  UIView *footView;
 @property (nonatomic ,strong)  UIView *opaqueView;
 @property (nonatomic ,strong)  UIActivityIndicatorView *activityIndicatorView;
@@ -44,7 +43,6 @@
 - (void)viewDidLoad {
     self.automaticallyAdjustsScrollViewInsets = false;
     [super viewDidLoad];
-    
     [self creatHeadView];
     [self creatWebView];
     [self creatFootView];
@@ -99,15 +97,24 @@
 }
 
 - (void)creatWebView{
+    MiddleWebView *webView = [[MiddleWebView alloc] initWithFrame:ccr(0, 0, SCREEN_WIDTH, RELATIVE_HEIGHT(530))];
+    [self.view addSubview:webView];
+    self.webView = webView;
+    
+    
+}
+/*
+- (void)creatWebView{
+    
     _webView = [[UIWebView alloc]initWithFrame:ccr(0, 0, SCREEN_WIDTH, RELATIVE_HEIGHT(530))];
     [_webView setUserInteractionEnabled:YES];//是否支持交互
-    //[webView setDelegate:self];
-    _webView.delegate=self;
+    [_webView setDelegate:self];
     _webView.scrollView.bounces = NO;
     [_webView setOpaque:NO];//opaque是不透明的意思
     [_webView setScalesPageToFit:YES];//自动缩放以适应屏幕
     [self.view addSubview:_webView];
- 
+    
+
 
     //加载网页的方式
     //1.创建并加载远程网页
@@ -132,7 +139,7 @@
     [self.webView addSubview:_opaqueView];
     [_opaqueView addSubview:_activityIndicatorView];
 
-    
+
     
 }
 
@@ -146,7 +153,7 @@
     [_activityIndicatorView stopAnimating];
     _opaqueView.hidden = YES;
 }
-/*
+
 //UIWebView如何判断 HTTP 404 等错误
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     NSURL *url = [NSURL URLWithString:@"https://baidu.com"];
@@ -296,49 +303,5 @@
     }
     return RELATIVE_HEIGHT(180);
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

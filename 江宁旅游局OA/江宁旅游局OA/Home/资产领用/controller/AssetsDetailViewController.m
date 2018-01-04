@@ -7,7 +7,6 @@
 //
 
 #import "AssetsDetailViewController.h"
-#import "AppConstants.h"
 #import "zySheetPickerView.h"
 @interface AssetsDetailViewController ()<UITextFieldDelegate>
 @property (nonatomic ,strong)  UIButton *categoryBtn;

@@ -11,7 +11,6 @@
 #import "wfaView.h"
 #import "adwView.h"
 #import "hbcView.h"
-#import "AppConstants.h"
 @interface progressViewController ()<wfaViewDelegate,adwViewDelegate,hbcViewDelegate>
 
 @end

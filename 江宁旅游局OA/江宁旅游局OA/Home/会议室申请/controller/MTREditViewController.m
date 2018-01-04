@@ -7,7 +7,6 @@
 //
 
 #import "MTREditViewController.h"
-#import "AppConstants.h"
 #import "XjwDatePickerView.h"
 @interface MTREditViewController ()<UITextFieldDelegate>
 @property (nonatomic ,strong)  UIButton *startBtn;

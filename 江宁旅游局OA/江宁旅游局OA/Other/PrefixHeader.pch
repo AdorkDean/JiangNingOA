@@ -1,11 +1,17 @@
 //
-//  AppConstants.h
+//  PrefixHeader.pch
 //  江宁旅游局OA
 //
-//  Created by 欣华pro on 2016/10/10.
-//  Copyright © 2016年 xujw. All rights reserved.
+//  Created by 欣华pro on 2017/7/13.
+//  Copyright © 2017年 xujw. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MBProgressHUD+MJ.h"
+#import "UIView+Extension.h"
+#import "UIColor+ZXLazy.h"
 
 #ifdef DEBUG // 处于开发阶段
 #define NSLog(...) NSLog(__VA_ARGS__)
@@ -15,15 +21,10 @@
 
 #define NSLogFunc NSLog(@"%s", __func__)
 
-#import "MBProgressHUD+MJ.h"
-#import "UIView+Extension.h"
-#import "UIColor+ZXLazy.h"
-
 //#define BASE_URL @"http://218.94.213.34:18080/lyjoa"
 #define BASE_URL @"http://192.168.1.48:8080/lyjoa/app"
 
 #define HTML_URL @"http://192.168.1.48:8080/lyjoa/app/hadoop"
-
 
 #define HTTP_CONECT(x,y) [NSString stringWithFormat:@"%@%@",x,y]
 
@@ -31,13 +32,11 @@
 
 #define SCREEN_HEIGHT   ([[UIScreen mainScreen] bounds].size.height)
 
-
 //RGB颜色
 #define XHColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:1.0]
 #define WIN_SIZE [UIScreen mainScreen].bounds.size
 #define WIN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define WIN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
 
 // Frame的快捷操作
 static inline CGFloat GG_X(UIView *view){ return view.frame.origin.x;}
@@ -91,4 +90,4 @@ otherButtonTitles:nil]; \
 #define mFirstLaunch     mAPPVersion     //以系统版本来判断是否是第一次启动，包括升级后启动。
 #define mFirstRun        @"firstRun"     //判断是否为第一次运行，升级后启动不算是第一次运行
 
-
+#endif /* PrefixHeader_pch */

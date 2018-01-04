@@ -7,7 +7,6 @@
 //
 
 #import "LogEditorViewController.h"
-#import "AppConstants.h"
 @interface LogEditorViewController ()<UITextViewDelegate>
 @property (nonatomic ,strong)  UITextView *detailTextView;
 @property (nonatomic ,strong)  UILabel *placeholder;

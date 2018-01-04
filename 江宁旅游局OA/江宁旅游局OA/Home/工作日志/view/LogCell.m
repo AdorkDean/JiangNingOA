@@ -7,7 +7,6 @@
 //
 
 #import "LogCell.h"
-#import "AppConstants.h"
 @implementation LogCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

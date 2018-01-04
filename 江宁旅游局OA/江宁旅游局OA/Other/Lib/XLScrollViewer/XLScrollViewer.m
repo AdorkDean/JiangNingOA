@@ -11,7 +11,7 @@
 #define screen_width [UIScreen mainScreen].bounds.size.width
 
 #import "XLScrollViewer.h"
-#import "AppConstants.h"
+
 @interface XLScrollViewer ()<UIScrollViewDelegate>
 {
     int _x;

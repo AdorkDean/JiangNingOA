@@ -7,7 +7,6 @@
 //
 
 #import "remindTableViewController.h"
-#import "AppConstants.h"
 @interface remindTableViewController ()
 @property (nonatomic ,strong)  NSArray *nameArr;
 @property (nonatomic ,strong)  NSArray *imgArr;

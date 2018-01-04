@@ -7,7 +7,6 @@
 //
 
 #import "MeetingAuditViewController.h"
-#import "AppConstants.h"
 #import "sectionView.h"
 @interface MeetingAuditViewController ()<UITextViewDelegate>
 @property (nonatomic ,strong)  UITableView *auditTextView;
